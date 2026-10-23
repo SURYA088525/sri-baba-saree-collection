@@ -1,51 +1,57 @@
-# Sri Baba Saree Collection
+# Sri Baba Saree Collection 🛍️
 
-A boutique website concept for a family saree business, built with HTML, CSS, and JavaScript.
+A responsive boutique website created for a family saree business, showcasing traditional fashion and making it easier for customers to explore the collection and contact the store.
 
-## About the Project
+## 🌐 Live Demo
 
-Sri Baba Saree Collection is a frontend website project created to showcase a traditional Indian boutique online. It features an elegant design inspired by Indian fashion, with dedicated pages for sarees, jewellery, the boutique story, and contact information.
+**[Visit Sri Baba Saree Collection](https://surya088525.github.io/sri-baba-saree-collection/)**
 
-This project is a work in progress. Actual product photos and product details will be added in future updates.
+## ✨ Features
 
-## Features
+- 🏠 Home page for the boutique
+- 👗 Sarees collection page
+- 💎 Jewellery page
+- 📖 About Us page
+- 📞 Contact page
+- 📱 Responsive website layout
+- 💬 WhatsApp contact integration
 
-- Elegant boutique-inspired user interface
-- Home page with collection highlights
-- Separate Sarees and Jewellery pages
-- About and Contact pages
-- Responsive navigation for mobile screens
-- WhatsApp enquiry links
-- CSS animations and interactive elements
-
-## Pages
-
-- Home
-- Sarees
-- Jewellery
-- Our Story
-- Contact
-
-## Tech Stack
+## 🛠️ Built With
 
 - HTML5
 - CSS3
 - JavaScript
+- Git & GitHub
+- GitHub Pages
 
-## Project Status
+## 📂 Project Structure
 
-🚧 In Progress
+```text
+sri-baba-saree-collection/
+├── index.html
+├── sarees.html
+├── jewellery.html
+├── about.html
+├── contact.html
+├── style.css
+├── script.js
+└── README.md
+```
 
-Future improvements:
-- Add actual saree and jewellery product photos
-- Add product names, prices, and descriptions
-- Improve product browsing and enquiry experience
-- Publish a live website demo
+## 🎯 Project Goal
 
-## Purpose
+To create an accessible online presence for a family boutique and provide customers with a simple way to explore its pages and contact the store.
 
-Created as a frontend development project for a family boutique, with plans to expand it into a useful business website.
+## 🚀 Deployment
+
+This website is hosted using GitHub Pages.
+
+## 👨‍💻 Developer
+
+**Surya Dev**
+
+- GitHub: [@SURYA088525](https://github.com/SURYA088525)
 
 ---
 
-Made with care by SURYA088525.
+*Built with ❤️ for Sri Baba Saree Collection.*
