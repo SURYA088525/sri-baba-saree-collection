@@ -4,7 +4,24 @@ A responsive boutique website created for a family saree business, showcasing tr
 
 ## 🌐 Live Demo
 
-**[Visit Sri Baba Saree Collection](https://surya088525.github.io/sri-baba-saree-collection/)**
+**[Visit Sri Baba Saree Collection](https://surya088525.github.io/sri-baba-saree-collection/)** 
+
+## 📸 Website Preview
+
+### Home Page
+![Home Page](Screenshot%202026-10-23%20135140.png)
+
+### Sarees Page
+![Sarees Page](Screenshot%202026-10-23%20135155.png)
+
+### Jewellery Page
+![Jewellery Page](Screenshot%202026-10-23%20135206.png)
+
+### About Us Page
+![About Us Page](Screenshot%202026-10-23%20135225.png)
+
+### Contact Page
+![Contact Page](Screenshot%202026-10-23%20135233.png)
 
 ## ✨ Features
 
