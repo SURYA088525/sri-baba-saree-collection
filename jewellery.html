@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5b1025">
+  <meta name="description" content="Explore traditional and contemporary jewellery at Sri Baba Saree Collection, Suryapet.">
+  <title>Jewellery Collection | Sri Baba Saree Collection</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+
+  <style>
+    .jewellery-hero {
+      min-height: 420px;
+      padding: 75px 20px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: #fffaf2;
+      background:
+        linear-gradient(120deg, rgba(55,8,25,.91), rgba(91,16,37,.72)),
+        url("https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1600&q=85") center/cover;
+    }
+
+    .jewellery-hero h1 {
+      margin: 16px 0;
+      font-size: clamp(46px, 6vw, 76px);
+      font-weight: 500;
+    }
+
+    .jewellery-hero p {
+      max-width: 650px;
+      margin: auto;
+      line-height: 1.9;
+    }
+
+    .jewellery-kicker {
+      color: #e5c98e;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .jewellery-section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 75px 24px;
+    }
+
+    .jewellery-heading {
+      margin-bottom: 35px;
+      text-align: center;
+    }
+
+    .jewellery-heading h2 {
+      margin: 12px 0;
+      color: #5b1025;
+      font-size: clamp(36px, 4vw, 52px);
+      font-weight: 500;
+    }
+
+    .jewellery-heading p {
+      max-width: 650px;
+      margin: auto;
+      color: #75665f;
+      line-height: 1.9;
+    }
+
+    .jewellery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    .jewellery-card {
+      overflow: hidden;
+      background: #fffdf9;
+      border: 1px solid #e6d8c7;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .jewellery-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(66,24,39,.10);
+    }
+
+    .jewellery-image {
+      height: 320px;
+      overflow: hidden;
+      background: #f0e5d5;
+    }
+
+    .jewellery-image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .45s ease;
+    }
+
+    .jewellery-card:hover .jewellery-image img {
+      transform: scale(1.04);
+    }
+
+    .jewellery-info {
+      padding: 23px;
+    }
+
+    .jewellery-tag {
+      color: #a77c37;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .jewellery-info h3 {
+      margin: 10px 0;
+      color: #5b1025;
+      font-size: 28px;
+      font-weight: 500;
+    }
+
+    .jewellery-info p {
+      min-height: 48px;
+      color: #75665f;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .jewellery-button {
+      display: inline-block;
+      padding: 12px 17px;
+      background: #5b1025;
+      color: white;
+      text-decoration: none;
+      font-size: 12px;
+      transition: background .2s;
+    }
+
+    .jewellery-button:hover {
+      background: #7b2940;
+    }
+
+    .jewellery-note {
+      margin-top: 35px;
+      padding: 20px;
+      border: 1px solid #e6d8c7;
+      text-align: center;
+      color: #75665f;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .jewellery-cta {
+      padding: 55px 20px;
+      text-align: center;
+      background: #f0e5d5;
+    }
+
+    .jewellery-cta h2 {
+      color: #5b1025;
+      font-size: clamp(32px, 4vw, 46px);
+      font-weight: 500;
+    }
+
+    .jewellery-cta p {
+      color: #75665f;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 800px) {
+      .jewellery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 540px) {
+      .jewellery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .jewellery-image {
+        height: 360px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="announcement-bar">
+    Timeless tradition. Beautifully yours.
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="brand" aria-label="Sri Baba Saree Collection home">
+      <span class="brand-mark">SB</span>
+      <span class="brand-copy">
+        <strong>SRI BABA</strong>
+        <small>SAREE COLLECTION</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="sarees.html">Sarees</a>
+      <a class="nav-link active" href="jewellery.html" aria-current="page">Jewellery</a>
+      <a class="nav-link" href="about.html">Our Story</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="button button-small button-burgundy"
+        href="https://wa.me/919182384217?text=Hello%20Sri%20Baba%20Saree%20Collection"
+        target="_blank" rel="noopener noreferrer">Enquire on WhatsApp ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="jewellery-hero">
+      <div>
+        <span class="jewellery-kicker">The Finishing Touch</span>
+        <h1>Jewellery That Tells Your Story</h1>
+        <p>Discover beautiful finishing touches for festive celebrations, weddings and everyday elegance at Sri Baba Collection.</p>
+      </div>
+    </section>
+
+    <section class="jewellery-section">
+      <div class="jewellery-heading">
+        <span class="jewellery-kicker">Curated for You</span>
+        <h2>Our Jewellery Edit</h2>
+        <p>Explore jewellery styles inspired by traditional Indian craftsmanship and contemporary elegance.</p>
+      </div>
+
+      <div class="jewellery-grid">
+
+        <article class="jewellery-card">
+          <div class="jewellery-image">
+            <img
+              src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=800&q=85"
+              alt="Gold-tone jewellery styling" loading="lazy"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x700/F0E5D5/5B1025?text=Traditional+Jewellery';">
+          </div>
+          <div class="jewellery-info">
+            <span class="jewellery-tag">Traditional Style</span>
+            <h3>Classic Gold Tones</h3>
+            <p>Timeless jewellery inspiration for weddings and traditional occasions.</p>
+            <a class="jewellery-button" target="_blank" rel="noopener noreferrer"
+              href="https://wa.me/919182384217?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20traditional%20jewellery.">Enquire on WhatsApp ↗</a>
+          </div>
+        </article>
+
+        <article class="jewellery-card">
+          <div class="jewellery-image">
+            <img
+              src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=85"
+              alt="Elegant necklace and earrings" loading="lazy"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x700/F0E5D5/5B1025?text=Necklaces';">
+          </div>
+          <div class="jewellery-info">
+            <span class="jewellery-tag">Elegant Details</span>
+            <h3>Necklaces & Sets</h3>
+            <p>Statement-inspired pieces to complement festive and occasion wear.</p>
+            <a class="jewellery-button" target="_blank" rel="noopener noreferrer"
+              href="https://wa.me/919182384217?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20necklaces%20and%20sets.">Enquire on WhatsApp ↗</a>
+          </div>
+        </article>
+
+        <article class="jewellery-card">
+          <div class="jewellery-image">
+            <img
+              src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=800&q=85"
+              alt="Decorative earrings and accessories" loading="lazy"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x700/F0E5D5/5B1025?text=Earrings';">
+          </div>
+          <div class="jewellery-info">
+            <span class="jewellery-tag">Finishing Touch</span>
+            <h3>Earrings & Accessories</h3>
+            <p>Beautiful detail inspiration for everyday looks and special occasions.</p>
+            <a class="jewellery-button" target="_blank" rel="noopener noreferrer"
+              href="https://wa.me/919182384217?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20earrings%20and%20accessories.">Enquire on WhatsApp ↗</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="jewellery-note">
+        Images are style inspiration and may not represent current shop inventory.
+        Please contact us to confirm available products and prices.
+      </div>
+    </section>
+
+    <section class="jewellery-cta">
+      <h2>Complete Your Look</h2>
+      <p>Looking for something specific? Message us to ask about current designs and availability.</p>
+      <a class="jewellery-button" target="_blank" rel="noopener noreferrer"
+        href="https://wa.me/919182384217?text=Hello%2C%20please%20share%20your%20latest%20jewellery%20collection.">Explore on WhatsApp ↗</a>
+    </section>
+  </main>
+
+  <section class="official-community">
+    <h3>Join Our Official WhatsApp Group 💚</h3>
+    <p>Stay connected for collection updates and announcements.</p>
+    <a href="https://chat.whatsapp.com/JOVWu6dOJ22JWDRWwFkfif?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4"
+      target="_blank" rel="noopener noreferrer">Join Our WhatsApp Community ↗</a>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html" class="brand brand-footer">
+          <span class="brand-mark">SB</span>
+          <span class="brand-copy">
+            <strong>SRI BABA</strong>
+            <small>SAREE COLLECTION</small>
+          </span>
+        </a>
+        <p>Celebrating Indian elegance, one beautiful detail at a time.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="sarees.html">Sarees</a>
+        <a href="jewellery.html">Jewellery</a>
+        <a href="about.html">Our Story</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Visit & Connect</h3>
+        <p>Suryapet, Telangana, India</p>
+        <a href="tel:+919182384217">+91 9182384217</a>
+        <a href="https://wa.me/919182384217" target="_blank" rel="noopener noreferrer">WhatsApp Us ↗</a>
+        <a href="contact.html">Shop location & details</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="currentYear">2026</span> Sri Baba Saree Collection.</p>
+      <p>Made with love for timeless style ✦</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/919182384217"
+    target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <span aria-hidden="true">✆</span><span>Chat with us</span>
+  </a>
+
+</body>
+</html>

@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5b1025">
+  <meta name="description" content="Discover the story of Sri Baba Saree Collection in Suryapet, Telangana.">
+  <title>Our Story | Sri Baba Saree Collection</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+
+  <style>
+    .story-hero {
+      min-height: 390px;
+      display: grid;
+      place-items: center;
+      padding: 70px 22px;
+      text-align: center;
+      color: #fffaf2;
+      background:
+        linear-gradient(120deg, rgba(55,8,25,.92), rgba(91,16,37,.76)),
+        url("https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1600&q=85") center/cover;
+    }
+
+    .story-hero h1 {
+      margin: 18px 0;
+      font-size: clamp(46px, 6vw, 76px);
+      font-weight: 500;
+    }
+
+    .story-hero p {
+      max-width: 660px;
+      margin: auto;
+      line-height: 1.9;
+    }
+
+    .story-kicker {
+      color: #e5c98e;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .story-main {
+      max-width: 1150px;
+      margin: auto;
+      padding: 85px 24px;
+    }
+
+    .story-intro {
+      max-width: 780px;
+      margin: 0 auto 65px;
+      text-align: center;
+    }
+
+    .story-intro h2,
+    .story-copy h2,
+    .values-heading h2 {
+      color: #5b1025;
+      font-size: clamp(36px, 4vw, 52px);
+      font-weight: 500;
+    }
+
+    .story-intro p,
+    .story-copy p {
+      color: #75665f;
+      line-height: 1.95;
+      font-size: 14px;
+    }
+
+    .story-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 60px;
+    }
+
+    .story-photo {
+      min-height: 430px;
+      overflow: hidden;
+      background: #f0e5d5;
+    }
+
+    .story-photo img {
+      width: 100%;
+      height: 430px;
+      object-fit: cover;
+    }
+
+    .story-copy h2 {
+      margin: 14px 0 22px;
+    }
+
+    .story-values {
+      padding: 75px 24px;
+      background: #f0e5d5;
+    }
+
+    .values-heading {
+      max-width: 720px;
+      margin: 0 auto 38px;
+      text-align: center;
+    }
+
+    .values-heading p {
+      color: #75665f;
+      line-height: 1.8;
+    }
+
+    .values-grid {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .value-card {
+      padding: 30px 24px;
+      background: #fffdf9;
+      border: 1px solid #e6d8c7;
+      text-align: center;
+    }
+
+    .value-icon {
+      color: #bd9655;
+      font-size: 30px;
+    }
+
+    .value-card h3 {
+      margin: 12px 0;
+      color: #5b1025;
+      font-size: 26px;
+      font-weight: 500;
+    }
+
+    .value-card p {
+      margin: 0;
+      color: #75665f;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .story-cta {
+      padding: 65px 22px;
+      text-align: center;
+      background: #5b1025;
+      color: #fffaf2;
+    }
+
+    .story-cta h2 {
+      font-size: clamp(36px, 4vw, 50px);
+      font-weight: 500;
+    }
+
+    .story-cta p {
+      margin: 0 auto 25px;
+      max-width: 600px;
+      color: #eadcda;
+      line-height: 1.9;
+    }
+
+    .story-cta .button {
+      background: #bd9655;
+      color: #29151b;
+    }
+
+    @media (max-width: 760px) {
+      .story-main {
+        padding: 60px 7%;
+      }
+
+      .story-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .story-photo,
+      .story-photo img {
+        height: 350px;
+        min-height: 0;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="announcement-bar">
+    Timeless tradition. Beautifully yours.
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="brand" aria-label="Sri Baba Saree Collection home">
+      <span class="brand-mark">SB</span>
+      <span class="brand-copy">
+        <strong>SRI BABA</strong>
+        <small>SAREE COLLECTION</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="sarees.html">Sarees</a>
+      <a class="nav-link" href="jewellery.html">Jewellery</a>
+      <a class="nav-link active" href="about.html" aria-current="page">Our Story</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="button button-small button-burgundy"
+        href="https://wa.me/919182384217?text=Hello%20Sri%20Baba%20Saree%20Collection"
+        target="_blank" rel="noopener noreferrer">Enquire on WhatsApp ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="story-hero">
+      <div>
+        <span class="story-kicker">A Boutique With Heart</span>
+        <h1>Our Story</h1>
+        <p>Rooted in tradition. Inspired by elegance. Here to help you find something beautiful for your special moments.</p>
+      </div>
+    </section>
+
+    <section class="story-main">
+      <div class="story-intro reveal">
+        <span class="story-kicker" style="color:#bd9655;">Welcome to Our World</span>
+        <h2>Tradition in Every Drape</h2>
+        <p>
+          At Sri Baba Saree Collection, we celebrate the beauty of Indian
+          fashion and the special moments that bring us together.
+          From sarees to jewellery, our goal is to help you explore styles
+          that make every occasion feel memorable.
+        </p>
+      </div>
+
+      <div class="story-layout">
+        <div class="story-photo reveal">
+          <img
+            src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=85"
+            alt="Warm boutique-inspired interior"
+            loading="lazy"
+            onerror="this.onerror=null;this.src='https://placehold.co/800x900/F0E5D5/5B1025?text=Sri+Baba+Collection';">
+        </div>
+
+        <div class="story-copy reveal">
+          <span class="story-kicker" style="color:#bd9655;">More Than a Collection</span>
+          <h2>Beauty in Every Detail</h2>
+          <p>
+            Whether you are preparing for a wedding, celebrating a festival,
+            attending a family gathering or simply looking for something
+            lovely to wear, we want your shopping experience to feel welcoming.
+          </p>
+          <p>
+            Based in Suryapet, Telangana, Sri Baba Saree Collection brings
+            traditional inspiration and personal service together.
+            You can connect with us directly to ask about designs, availability
+            and prices.
+          </p>
+          <a class="button button-burgundy"
+            href="https://wa.me/919182384217?text=Hello%20Sri%20Baba%20Saree%20Collection%2C%20I%20would%20like%20to%20know%20more."
+            target="_blank" rel="noopener noreferrer">Connect With Us ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-values">
+      <div class="values-heading reveal">
+        <span class="story-kicker" style="color:#a77c37;">What Matters to Us</span>
+        <h2>Our Promise to You</h2>
+        <p>Every interaction should feel personal, helpful and welcoming.</p>
+      </div>
+
+      <div class="values-grid">
+        <article class="value-card reveal">
+          <div class="value-icon" aria-hidden="true">✦</div>
+          <h3>Timeless Style</h3>
+          <p>Traditional inspiration for celebrations, everyday elegance and memorable occasions.</p>
+        </article>
+
+        <article class="value-card reveal">
+          <div class="value-icon" aria-hidden="true">♡</div>
+          <h3>Personal Service</h3>
+          <p>Reach out to us directly for help with product enquiries and available designs.</p>
+        </article>
+
+        <article class="value-card reveal">
+          <div class="value-icon" aria-hidden="true">❋</div>
+          <h3>Made for Moments</h3>
+          <p>Explore styles for weddings, festivals, family celebrations and thoughtful gifts.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="story-cta">
+      <span class="story-kicker">We'd Love to Hear From You</span>
+      <h2>Let's Find Your Style</h2>
+      <p>Have a design in mind? Message us to ask about our current collections and availability.</p>
+      <a class="button"
+        href="https://wa.me/919182384217?text=Hello%20Sri%20Baba%20Saree%20Collection%2C%20please%20share%20your%20latest%20collections."
+        target="_blank" rel="noopener noreferrer">Chat on WhatsApp ↗</a>
+    </section>
+  </main>
+
+  <section class="official-community">
+    <h3>Join Our Official WhatsApp Group 💚</h3>
+    <p>Stay connected for collection updates and announcements.</p>
+    <a href="https://chat.whatsapp.com/JOVWu6dOJ22JWDRWwFkfif?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4"
+      target="_blank" rel="noopener noreferrer">Join Our WhatsApp Community ↗</a>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html" class="brand brand-footer">
+          <span class="brand-mark">SB</span>
+          <span class="brand-copy">
+            <strong>SRI BABA</strong>
+            <small>SAREE COLLECTION</small>
+          </span>
+        </a>
+        <p>Celebrating Indian elegance, one beautiful detail at a time.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="sarees.html">Sarees</a>
+        <a href="jewellery.html">Jewellery</a>
+        <a href="about.html">Our Story</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Visit & Connect</h3>
+        <p>Suryapet, Telangana, India</p>
+        <a href="tel:+919182384217">+91 9182384217</a>
+        <a href="https://wa.me/919182384217" target="_blank" rel="noopener noreferrer">WhatsApp Us ↗</a>
+        <a href="contact.html">Contact & location</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="currentYear">2026</span> Sri Baba Saree Collection.</p>
+      <p>Made with love for timeless style ✦</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/919182384217"
+    target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <span aria-hidden="true">✆</span><span>Chat with us</span>
+  </a>
+
+</body>
+</html>

@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5b1025">
+  <meta name="description" content="Contact Sri Baba Saree Collection in Suryapet, Telangana, for saree and jewellery enquiries.">
+  <title>Contact Us | Sri Baba Saree Collection</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+
+  <style>
+    .contact-hero {
+      min-height: 370px;
+      display: grid;
+      place-items: center;
+      padding: 65px 22px;
+      text-align: center;
+      color: #fffaf2;
+      background:
+        linear-gradient(120deg, rgba(55,8,25,.93), rgba(91,16,37,.77)),
+        url("https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1600&q=85") center/cover;
+    }
+
+    .contact-kicker {
+      color: #e5c98e;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .contact-hero h1 {
+      margin: 16px 0;
+      font-size: clamp(46px, 6vw, 76px);
+      font-weight: 500;
+    }
+
+    .contact-hero p {
+      max-width: 620px;
+      margin: auto;
+      line-height: 1.9;
+    }
+
+    .contact-main {
+      max-width: 1150px;
+      margin: auto;
+      padding: 75px 24px;
+    }
+
+    .contact-heading {
+      max-width: 720px;
+      margin: 0 auto 45px;
+      text-align: center;
+    }
+
+    .contact-heading h2 {
+      margin: 12px 0;
+      color: #5b1025;
+      font-size: clamp(36px, 4vw, 52px);
+      font-weight: 500;
+    }
+
+    .contact-heading p {
+      color: #75665f;
+      line-height: 1.9;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .contact-card {
+      padding: 30px 23px;
+      text-align: center;
+      background: #fffdf9;
+      border: 1px solid #e6d8c7;
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(66,24,39,.08);
+    }
+
+    .contact-icon {
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 18px;
+      border: 1px solid #bd9655;
+      border-radius: 50%;
+      color: #8f682d;
+      font-size: 22px;
+    }
+
+    .contact-card h3 {
+      margin: 0 0 12px;
+      color: #5b1025;
+      font-size: 26px;
+      font-weight: 500;
+    }
+
+    .contact-card p {
+      margin: 0 0 18px;
+      color: #75665f;
+      font-size: 13px;
+      line-height: 1.8;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-link {
+      display: inline-block;
+      color: #5b1025;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      border-bottom: 1px solid #bd9655;
+      padding-bottom: 4px;
+    }
+
+    .contact-link:hover {
+      color: #a77c37;
+    }
+
+    .contact-community {
+      margin-top: 50px;
+      padding: 38px 25px;
+      text-align: center;
+      background: #f0e5d5;
+      border: 1px solid #e6d8c7;
+    }
+
+    .contact-community h2 {
+      margin: 0 0 12px;
+      color: #5b1025;
+      font-size: clamp(30px, 4vw, 42px);
+      font-weight: 500;
+    }
+
+    .contact-community p {
+      max-width: 650px;
+      margin: 0 auto 22px;
+      color: #75665f;
+      line-height: 1.8;
+    }
+
+    .contact-button {
+      display: inline-block;
+      padding: 13px 20px;
+      background: #5b1025;
+      color: #fff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      transition: background .2s;
+    }
+
+    .contact-button:hover {
+      background: #7b2940;
+    }
+
+    .contact-button.whatsapp {
+      background: #176b48;
+    }
+
+    .contact-button.whatsapp:hover {
+      background: #105438;
+    }
+
+    .contact-note {
+      margin-top: 30px;
+      text-align: center;
+      color: #75665f;
+      font-size: 12px;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 760px) {
+      .contact-main {
+        padding: 55px 7%;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        padding: 28px 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="announcement-bar">
+    Timeless tradition. Beautifully yours.
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="brand" aria-label="Sri Baba Saree Collection home">
+      <span class="brand-mark">SB</span>
+      <span class="brand-copy">
+        <strong>SRI BABA</strong>
+        <small>SAREE COLLECTION</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="sarees.html">Sarees</a>
+      <a class="nav-link" href="jewellery.html">Jewellery</a>
+      <a class="nav-link" href="about.html">Our Story</a>
+      <a class="nav-link active" href="contact.html" aria-current="page">Contact</a>
+      <a class="button button-small button-burgundy"
+        href="https://wa.me/919182384217?text=Hello%20Sri%20Baba%20Saree%20Collection"
+        target="_blank" rel="noopener noreferrer">Enquire on WhatsApp ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div>
+        <span class="contact-kicker">We'd Love to Hear From You</span>
+        <h1>Let's Connect</h1>
+        <p>Questions about sarees, jewellery or availability? Reach out to us. We're happy to help you explore our collection.</p>
+      </div>
+    </section>
+
+    <section class="contact-main">
+      <div class="contact-heading reveal">
+        <span class="contact-kicker" style="color:#bd9655;">Visit & Connect</span>
+        <h2>We're Just a Message Away</h2>
+        <p>Choose the easiest way to contact Sri Baba Saree Collection.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <article class="contact-card reveal">
+          <div class="contact-icon" aria-hidden="true">⌖</div>
+          <h3>Visit Our Store</h3>
+          <p>Suryapet, Telangana, India</p>
+          <a class="contact-link" href="https://www.google.com/maps/search/?api=1&query=Sri+Baba+Saree+Collection+Suryapet+Telangana"
+            target="_blank" rel="noopener noreferrer">Find on Google Maps ↗</a>
+        </article>
+
+        <article class="contact-card reveal">
+          <div class="contact-icon" aria-hidden="true">✆</div>
+          <h3>WhatsApp Us</h3>
+          <p>Ask about current saree designs, jewellery, prices and availability.</p>
+          <a class="contact-link" href="https://wa.me/919182384217?text=Hello%20Sri%20Baba%20Saree%20Collection"
+            target="_blank" rel="noopener noreferrer">Start a Conversation ↗</a>
+        </article>
+
+        <article class="contact-card reveal">
+          <div class="contact-icon" aria-hidden="true">✦</div>
+          <h3>Explore Collections</h3>
+          <p>Browse our saree and jewellery style inspiration online.</p>
+          <a class="contact-link" href="sarees.html">Explore Sarees ↗</a>
+        </article>
+
+      </div>
+
+      <div class="contact-community reveal">
+        <span class="contact-kicker" style="color:#a77c37;">Stay Connected</span>
+        <h2>Join Our Official WhatsApp Group</h2>
+        <p>Join our community for collection updates and announcements from Sri Baba Saree Collection.</p>
+        <a class="contact-button whatsapp"
+          href="https://chat.whatsapp.com/JOVWu6dOJ22JWDRWwFkfif?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4"
+          target="_blank" rel="noopener noreferrer">Join WhatsApp Group ↗</a>
+      </div>
+
+      <p class="contact-note">
+        Location details shown here are city-level. Please contact us to confirm
+        the exact shop address and visiting hours before travelling.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html" class="brand brand-footer">
+          <span class="brand-mark">SB</span>
+          <span class="brand-copy">
+            <strong>SRI BABA</strong>
+            <small>SAREE COLLECTION</small>
+          </span>
+        </a>
+        <p>Celebrating Indian elegance, one beautiful detail at a time.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="sarees.html">Sarees</a>
+        <a href="jewellery.html">Jewellery</a>
+        <a href="about.html">Our Story</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Visit & Connect</h3>
+        <p>Suryapet, Telangana, India</p>
+        <a href="tel:+919182384217">+91 9182384217</a>
+        <a href="https://wa.me/919182384217" target="_blank" rel="noopener noreferrer">WhatsApp Us ↗</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Sri+Baba+Saree+Collection+Suryapet+Telangana"
+          target="_blank" rel="noopener noreferrer">Find on Maps ↗</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="currentYear">2026</span> Sri Baba Saree Collection.</p>
+      <p>Made with love for timeless style ✦</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/919182384217"
+    target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <span aria-hidden="true">✆</span><span>Chat with us</span>
+  </a>
+
+</body>
+</html>

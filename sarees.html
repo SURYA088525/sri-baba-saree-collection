@@ -1,0 +1,417 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5b1025">
+  <meta name="description" content="Explore saree styles at Sri Baba Saree Collection, Suryapet, Telangana.">
+  <title>Saree Collection | Sri Baba Saree Collection</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+
+  <style>
+    .saree-hero {
+      min-height: 420px;
+      padding: 75px 20px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      color: #fffaf2;
+      background:
+        linear-gradient(120deg, rgba(55,8,25,.92), rgba(91,16,37,.72)),
+        url("https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1600&q=85") center/cover;
+    }
+
+    .saree-hero h1 {
+      margin: 16px 0;
+      font-size: clamp(48px, 6vw, 76px);
+      font-weight: 500;
+    }
+
+    .saree-hero p {
+      max-width: 650px;
+      margin: auto;
+      line-height: 1.9;
+    }
+
+    .saree-kicker {
+      color: #e5c98e;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .catalogue {
+      max-width: 1200px;
+      margin: auto;
+      padding: 75px 24px;
+    }
+
+    .catalogue-heading {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .catalogue-heading h2 {
+      margin: 12px 0;
+      color: #5b1025;
+      font-size: clamp(36px, 4vw, 52px);
+      font-weight: 500;
+    }
+
+    .catalogue-heading p {
+      color: #75665f;
+    }
+
+    .catalogue-tools {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin: 30px 0;
+    }
+
+    .catalogue-tools input,
+    .catalogue-tools select {
+      min-width: 220px;
+      padding: 13px 15px;
+      border: 1px solid #e6d8c7;
+      border-radius: 4px;
+      background: #fffdf9;
+      color: #34232a;
+      font: inherit;
+    }
+
+    .saree-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    .saree-card {
+      overflow: hidden;
+      background: #fffdf9;
+      border: 1px solid #e6d8c7;
+      transition: transform .25s, box-shadow .25s;
+    }
+
+    .saree-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(66,24,39,.10);
+    }
+
+    .saree-card img {
+      display: block;
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      background: #f0e5d5;
+    }
+
+    .saree-info {
+      padding: 22px;
+    }
+
+    .saree-tag {
+      color: #a77c37;
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .saree-info h3 {
+      margin: 10px 0;
+      color: #5b1025;
+      font-size: 27px;
+      font-weight: 500;
+    }
+
+    .saree-info p {
+      min-height: 48px;
+      color: #75665f;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    .saree-button {
+      display: inline-block;
+      padding: 12px 17px;
+      background: #5b1025;
+      color: white;
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    .saree-button:hover {
+      background: #7b2940;
+    }
+
+    .saree-cta {
+      padding: 50px 20px;
+      text-align: center;
+      background: #f0e5d5;
+    }
+
+    .saree-cta h2 {
+      color: #5b1025;
+      font-size: clamp(32px, 4vw, 45px);
+      font-weight: 500;
+    }
+
+    .saree-cta p {
+      color: #75665f;
+    }
+
+    .no-results {
+      display: none;
+      padding: 30px;
+      text-align: center;
+      color: #5b1025;
+    }
+
+    @media (max-width: 800px) {
+      .saree-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 540px) {
+      .saree-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .saree-card img {
+        height: 380px;
+      }
+
+      .catalogue-tools input,
+      .catalogue-tools select {
+        width: 100%;
+        min-width: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="announcement-bar">
+    Timeless tradition. Beautifully yours.
+  </div>
+
+  <header class="site-header">
+    <a href="index.html" class="brand" aria-label="Sri Baba Saree Collection home">
+      <span class="brand-mark">SB</span>
+      <span class="brand-copy">
+        <strong>SRI BABA</strong>
+        <small>SAREE COLLECTION</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" type="button"
+      aria-label="Open navigation menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link active" href="sarees.html" aria-current="page">Sarees</a>
+      <a class="nav-link" href="jewellery.html">Jewellery</a>
+      <a class="nav-link" href="about.html">Our Story</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="button button-small button-burgundy"
+        href="https://wa.me/919182384217?text=Hello%20Sri%20Baba%20Saree%20Collection"
+        target="_blank" rel="noopener noreferrer">Enquire on WhatsApp ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="saree-hero">
+      <div>
+        <span class="saree-kicker">Grace in Every Thread</span>
+        <h1>The Saree Collection</h1>
+        <p>Discover elegant styles for weddings, festivals, family celebrations and everyday occasions.</p>
+      </div>
+    </section>
+
+    <section class="catalogue">
+      <div class="catalogue-heading">
+        <span class="saree-kicker">Curated for You</span>
+        <h2>Find Your Favourite Saree</h2>
+        <p>Explore these sample styles. Contact us to confirm actual availability and prices.</p>
+      </div>
+
+      <div class="catalogue-tools">
+        <input id="sareeSearch" type="search" placeholder="Search sarees..." aria-label="Search sarees">
+        <select id="sareeCategory" aria-label="Filter sarees by category">
+          <option value="all">All Categories</option>
+          <option value="silk">Silk Sarees</option>
+          <option value="festive">Festive Sarees</option>
+          <option value="daily">Daily Wear</option>
+        </select>
+      </div>
+
+      <div class="saree-grid" id="sareeGrid">
+
+        <article class="saree-card" data-category="silk">
+          <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=85"
+            alt="Traditional Indian saree styling" loading="lazy"
+            onerror="this.onerror=null;this.src='https://placehold.co/600x800/F0E5D5/5B1025?text=Silk+Saree';">
+          <div class="saree-info">
+            <span class="saree-tag">Silk Collection</span>
+            <h3>Traditional Silk</h3>
+            <p>Classic-inspired styling for weddings and special celebrations.</p>
+            <a class="saree-button" target="_blank" rel="noopener noreferrer"
+              href="https://wa.me/919182384217?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20traditional%20silk%20sarees.">Enquire on WhatsApp ↗</a>
+          </div>
+        </article>
+
+        <article class="saree-card" data-category="festive">
+          <img src="https://images.unsplash.com/photo-1583391733958-dcf9e7a5c3f8?auto=format&fit=crop&w=800&q=85"
+            alt="Festive Indian fashion inspiration" loading="lazy"
+            onerror="this.onerror=null;this.src='https://placehold.co/600x800/F0E5D5/5B1025?text=Festive+Saree';">
+          <div class="saree-info">
+            <span class="saree-tag">Festive Collection</span>
+            <h3>Festive Elegance</h3>
+            <p>A graceful style for parties and family celebrations.</p>
+            <a class="saree-button" target="_blank" rel="noopener noreferrer"
+              href="https://wa.me/919182384217?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20festive%20sarees.">Enquire on WhatsApp ↗</a>
+          </div>
+        </article>
+
+        <article class="saree-card" data-category="daily">
+          <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=800&q=85"
+            alt="Indian ethnic clothing inspiration" loading="lazy"
+            onerror="this.onerror=null;this.src='https://placehold.co/600x800/F0E5D5/5B1025?text=Daily+Wear';">
+          <div class="saree-info">
+            <span class="saree-tag">Daily Wear</span>
+            <h3>Everyday Grace</h3>
+            <p>Simple and elegant inspiration for everyday occasions.</p>
+            <a class="saree-button" target="_blank" rel="noopener noreferrer"
+              href="https://wa.me/919182384217?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20daily%20wear%20sarees.">Enquire on WhatsApp ↗</a>
+          </div>
+        </article>
+
+        <article class="saree-card" data-category="silk">
+          <img src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?auto=format&fit=crop&w=800&q=85"
+            alt="Classic Indian fashion inspiration" loading="lazy"
+            onerror="this.onerror=null;this.src='https://placehold.co/600x800/F0E5D5/5B1025?text=Classic+Style';">
+          <div class="saree-info">
+            <span class="saree-tag">Classic Collection</span>
+            <h3>Classic Charm</h3>
+            <p>Traditional inspiration for your special moments.</p>
+            <a class="saree-button" target="_blank" rel="noopener noreferrer"
+              href="https://wa.me/919182384217?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20classic%20sarees.">Enquire on WhatsApp ↗</a>
+          </div>
+        </article>
+
+        <article class="saree-card" data-category="festive">
+          <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=85"
+            alt="Festive saree styling inspiration" loading="lazy"
+            onerror="this.onerror=null;this.src='https://placehold.co/600x800/F0E5D5/5B1025?text=Celebration+Wear';">
+          <div class="saree-info">
+            <span class="saree-tag">Celebration Wear</span>
+            <h3>Celebration Style</h3>
+            <p>Explore festive styling for memorable occasions.</p>
+            <a class="saree-button" target="_blank" rel="noopener noreferrer"
+              href="https://wa.me/919182384217?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20celebration%20sarees.">Enquire on WhatsApp ↗</a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="no-results" id="noResults">No matching styles found. Try another search.</p>
+    </section>
+
+    <section class="saree-cta">
+      <h2>Looking for a Particular Design?</h2>
+      <p>Message us to ask about our current collection, availability and prices.</p>
+      <a class="saree-button" target="_blank" rel="noopener noreferrer"
+        href="https://wa.me/919182384217?text=Hello%2C%20please%20share%20your%20latest%20saree%20collection.">Ask Us on WhatsApp ↗</a>
+    </section>
+  </main>
+
+  <section class="official-community">
+    <h3>Join Our Official WhatsApp Group 💚</h3>
+    <p>Stay connected for collection updates and announcements.</p>
+    <a href="https://chat.whatsapp.com/JOVWu6dOJ22JWDRWwFkfif?s=cl&amp;p=a&amp;mlu=4&amp;ilr=4"
+      target="_blank" rel="noopener noreferrer">Join Our WhatsApp Community ↗</a>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html" class="brand brand-footer">
+          <span class="brand-mark">SB</span>
+          <span class="brand-copy">
+            <strong>SRI BABA</strong>
+            <small>SAREE COLLECTION</small>
+          </span>
+        </a>
+        <p>Celebrating Indian elegance, one beautiful detail at a time.</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>Explore</h3>
+        <a href="index.html">Home</a>
+        <a href="sarees.html">Sarees</a>
+        <a href="jewellery.html">Jewellery</a>
+        <a href="about.html">Our Story</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h3>Visit & Connect</h3>
+        <p>Suryapet, Telangana, India</p>
+        <a href="tel:+919182384217">+91 9182384217</a>
+        <a href="https://wa.me/919182384217" target="_blank" rel="noopener noreferrer">WhatsApp Us ↗</a>
+        <a href="contact.html">Shop location & details</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span id="currentYear">2026</span> Sri Baba Saree Collection.</p>
+      <p>Made with love for timeless style ✦</p>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/919182384217"
+    target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <span aria-hidden="true">✆</span><span>Chat with us</span>
+  </a>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const search = document.getElementById("sareeSearch");
+      const category = document.getElementById("sareeCategory");
+      const cards = document.querySelectorAll(".saree-card");
+      const noResults = document.getElementById("noResults");
+
+      function filterSarees() {
+        let count = 0;
+        const query = search.value.toLowerCase().trim();
+
+        cards.forEach(card => {
+          const textMatch = card.textContent.toLowerCase().includes(query);
+          const categoryMatch = category.value === "all" ||
+            card.dataset.category === category.value;
+          const visible = textMatch && categoryMatch;
+
+          card.style.display = visible ? "" : "none";
+          if (visible) count++;
+        });
+
+        noResults.style.display = count ? "none" : "block";
+      }
+
+      search.addEventListener("input", filterSarees);
+      category.addEventListener("change", filterSarees);
+    });
+  </script>
+</body>
+</html>
